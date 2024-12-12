@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <section className='lg:px-20 my-20 grid grid-cols-3 gap-10'>
+    <section className='lg:px-20 my-20 grid grid-cols-1 lg:grid-cols-3 lg:gap-10'>
       <div className='col-span-2'>
         <ColumnOne />
       </div>
@@ -26,11 +26,11 @@ function ColumnOne() {
         <SectionHeading text={"Bag"} />
         <div className='mt-6'>
           <div className='flex flex-col gap-6'>
-            <CartItem 
-            imgUrl={"products/1.png"}
+            <CartItem
+              imgUrl={"products/1.png"}
             />
             <div className="divider"></div>
-            <CartItem 
+            <CartItem
               imgUrl={"/shoes/1.png"}
             />
           </div>
@@ -40,10 +40,10 @@ function ColumnOne() {
   )
 }
 
-function CartItem({imgUrl}) {
+function CartItem({ imgUrl }) {
   return (
-    <div className='flex gap-6'>
-      <img className='h-[164px] object-cover' src={`${imgUrl ? imgUrl : "https://placehold.co/164"}`} alt="" />
+    <div className='flex flex-col lg:flex-row gap-6'>
+      <img className='lg:h-[164px] object-cover' src={`${imgUrl ? imgUrl : "https://placehold.co/164"}`} alt="" />
       <div className='flex-grow flex justify-between'>
         <div>
           <div className='flex flex-col gap-4'>
@@ -69,7 +69,7 @@ function CartItem({imgUrl}) {
 
 function ColumnTwo() {
   return (
-    <div>
+    <div className='w-full'>
       <SectionHeading text={"Summary"} />
       <div className='mt-4 flex flex-col gap-4 text-sm font-medium'>
         <div className='flex justify-between'>
