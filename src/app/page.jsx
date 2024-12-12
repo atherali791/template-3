@@ -38,8 +38,8 @@ function FirstLook() {
       <AllCapsHeading text={"nike air max pulse"} />
       <p className='lg:w-[550px] text-sm text-center'>Extreme comfort. Hyper durable. Max volume. Introducing the Air Max Pulse—designed to push you past your limits and help you go to the max.</p>
       <div className='flex gap-3'>
-        <Button text={"Notify Me"} />
-        <Button text={"Shop Air Max"} />
+        <Button>Notify Me</Button>
+        <Button>Shop Air Max</Button>
       </div>
     </div>
   )
@@ -114,7 +114,7 @@ function Featured() {
       <div className='mt-6 flex flex-col gap-4 items-center'>
         <AllCapsHeading text={"Step into what feels good"} />
         <p className=''>Cause everyone should know the feeling of running in that perfect pair.</p>
-        <Button text={"Find Your Shoe"} />
+        <Button>Find Your Shoe</Button>
       </div>
     </section>
   )
@@ -191,7 +191,7 @@ function DontMiss() {
       <div className='flex flex-col items-center gap-4'>
         <AllCapsHeading text={"flight essentials"} />
         <p className='text-sm'>Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</p>
-        <Button text={"Shop"} />
+        <Button>Shop</Button>
       </div>
     </section>
   )

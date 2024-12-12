@@ -58,7 +58,7 @@ function FooterRight() {
 
 function FooterLeft(){
   return (
-    <div className='flex gap-3 text-white'>
+    <div className='flex gap-6 text-white'>
     <Twitter />
     <Facebook />
     <Youtube />

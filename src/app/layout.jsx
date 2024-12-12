@@ -4,9 +4,9 @@ import Header from "@/Components/Header";
 import ContentWrapper from "@/Components/ContentWrapper";
 import Footer from "@/Components/Footer";
 
-const roboto = Roboto({
+const font = Inter({
   subsets: ["latin"],
-  weight: ["100", "300", "500", "700", "900"]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
 })
 
 export const metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} antialiased`}
+        className={`${font.className} antialiased`}
       >
         <ContentWrapper>
           <Header />
