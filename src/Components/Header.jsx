@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className='pb-4 flex flex-col'>
       <div className=' flex justify-between items-center'>
-        <img className='w-7' src="/small_logo.png" alt="brand image" />
+        <img className='w-2' src="/small_logo.png" alt="brand image" />
         <div className='flex gap-4 items-center text-sm'>
           <Link href={""}>Find a Store</Link>
           <div className="divider"></div>
@@ -22,7 +22,7 @@ export default function Header() {
       </div>
 
       <nav className='grid grid-cols-1 lg:grid-cols-3 gap-3'>
-        <Link href={"/"}><img className='mx-auto lg:m-0 w-16' src="/logo.png" alt="" /></Link>
+        <Link href={"/"}><img className='mx-auto lg:m-0 w-4' src="/logo.png" alt="" /></Link>
         <div id='nav-links' className='font-semibold flex gap-6 items-center justify-center'>
           <Link href={""}>New & Featured</Link>
           <Link href={""}>Men</Link>
