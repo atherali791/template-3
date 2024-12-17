@@ -2,6 +2,7 @@ import HighlightedText from '@/Components/HighlightedText'
 import SectionHeading from '@/Components/SectionHeading'
 import { Trash } from 'lucide-react'
 import { Heart } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Page() {
@@ -86,7 +87,7 @@ function ColumnTwo() {
           <p>Rs. 20,890</p>
         </div>
       </div>
-      <button className='mt-4 w-full btn bg-black text-white rounded-full font-medium'>Member Checkout</button>
+      <Link href={"/checkout"}><button className='mt-4 w-full btn bg-black text-white rounded-full font-medium'>Member Checkout</button></Link>
 
     </div>
   )

@@ -14,15 +14,15 @@ export default function Header() {
           <div className="divider"></div>
           <Link href={""}>Help</Link>
           <div className="divider"></div>
-          <Link href={""}>Join Us</Link>
+          <Link href={"joinus"}>Join Us</Link>
           <div className="divider"></div>
-          <Link href={""}>Sign In</Link>
+          <Link href={"/login"}>Sign In</Link>
           <div className="divider"></div>
         </div>
       </div>
 
       <nav className='grid grid-cols-1 lg:grid-cols-3 gap-3'>
-        <img className='mx-auto lg:m-0 w-16' src="/logo.png" alt="" />
+        <Link href={"/"}><img className='mx-auto lg:m-0 w-16' src="/logo.png" alt="" /></Link>
         <div id='nav-links' className='font-semibold flex gap-6 items-center justify-center'>
           <Link href={""}>New & Featured</Link>
           <Link href={""}>Men</Link>
@@ -32,12 +32,12 @@ export default function Header() {
           <Link href={""}>SNKRS</Link>
         </div>
         <div className='flex gap-4 items-center justify-center lg:justify-end'>
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input flex items-center gap-2">
             <Search />
             <input type="text" className="grow" placeholder="Search" />
           </label>
           <Heart />
-          <ShoppingBag />
+          <Link href={"/cart"}><ShoppingBag /></Link>
         </div>
       </nav>
     </header>

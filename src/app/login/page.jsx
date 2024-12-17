@@ -1,4 +1,5 @@
 import Button from '@/Components/Button'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Page() {
@@ -25,7 +26,7 @@ export default function Page() {
       </button>
       <div className='flex text-sm gap-2'>
         <p className='opacity-60'>Not a Member?</p>
-        <span className='opacity-100 underline'>Join Us.</span>
+        <Link href={"/joinus"}><span className='opacity-100 underline'>Join Us.</span></Link>
       </div>
 
     </div>
